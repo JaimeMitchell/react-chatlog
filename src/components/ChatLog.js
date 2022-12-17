@@ -12,6 +12,7 @@ const ChatLog = (props) => {
           body={entry.body}
           time={entry.timeStamp}
           liked={entry.liked}
+          toggleHeart={props.toggleHeart}
         />
       );
     });

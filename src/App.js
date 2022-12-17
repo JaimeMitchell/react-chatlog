@@ -10,7 +10,7 @@ const App = () => {
     setMessages((messages) =>
       messages.map((entry) => {
         if (entry.id === id) {
-          return { ...entry, isComplete: !entry.isComplete };
+          return { ...entry, liked: !entry.liked };
         } else {
           return entry;
         }
@@ -18,8 +18,17 @@ const App = () => {
     );
   };
 
+  const heartTally = (param) => {
+    return param.reduce((total, heart) => {
+      return total + heart.liked;
+    }, 0);
+  };
+
+  const callingHeartTally = heartTally(messages);
+
   return (
     <div id="App heartWidget">
+      {callingHeartTally}
       <header>
         <h1>Application title</h1>
       </header>
