@@ -3,21 +3,21 @@ import './ChatEntry.css';
 import PropTypes from 'prop-types';
 import TimeStamp from './TimeStamp';
 
-const ChatEntry = ({ id, sender, body, timeStamp, toggleHeart, liked }) => {
-  const heartButton = liked ? '❤️' : '🤍';
+const ChatEntry = (props) => {
+  const heartButton = props.liked ? '❤️' : '🤍';
   return (
-    <div className="chat-entry local" id={id}>
-      <h2 className="entry-name">{sender}</h2>
+    <div className="chat-entry local" id={props.id}>
+      <h2 className="entry-name">{props.sender}</h2>
       <section className="entry-bubble">
-        <p>{body}</p>
-        <p className="entry-time">
-          <TimeStamp time={timeStamp} />
+        <p>{props.body}</p>
+        <p className=".chat-entry.remote .entry-time">
+          <TimeStamp time={props.timeStamp} />
         </p>
         {/* need to import toggleheart function */}
         <button
           className="button"
           onClick={() => {
-            toggleHeart(id);
+            props.toggleHeart(props.id);
           }}
         >
           {heartButton}
