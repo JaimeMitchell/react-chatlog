@@ -29,6 +29,7 @@ ChatLog.propTypes = {
       liked: PropTypes.bool.isRequired,
     })
   ),
+  toggleHeart: PropTypes.func.isRequired
 };
 
 export default ChatLog;

@@ -13,7 +13,9 @@ const ChatEntry = (props) => {
         <p className="entry-time">
           <TimeStamp time={props.timeStamp}/>
         </p>
-        <button className="like button">🤍</button>
+        {/* need to import toggleheart function */}
+        <button className="like button"
+        onClick={()=>{toggleHeart}}>🤍</button>
       </section>
     </div>
   );
@@ -25,6 +27,8 @@ ChatEntry.propTypes = {
   body: PropTypes.string.isRequired,
   timeStamp: PropTypes.string.isRequired,
   liked: PropTypes.bool.isRequired,
+  toggleHeart: PropTypes.func.isRequired
+
 };
 
 export default ChatEntry;
