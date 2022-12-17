@@ -18,19 +18,25 @@ const App = () => {
     );
   };
 
-  const heartTally = (param) => {
-    return param.reduce((total, heart) => {
-      return total + heart.liked;
-    }, 0);
-  };
+  // const heartTally = (param) => {
+  //   return param.reduce((total, heart) => {
+  //     return total + heart.liked;
+  //   }, 0);
+  // };
+
+  const heartTally= (messages) => {
+    return messages.reduce((total,message)=>{
+    if (message.liked) total++;
+    return total;
+  },0);}
 
   const callingHeartTally = heartTally(messages);
 
   return (
     <div id="App heartWidget">
-      {callingHeartTally}
+      
       <header>
-        <h1>Application title</h1>
+        <h1>ChatLog {callingHeartTally}❤️s</h1>
       </header>
       <main>
         <ChatLog
@@ -44,5 +50,4 @@ const App = () => {
 };
 
 export default App;
-/* Wave 01: Render one ChatEntry component
-  Wave 02: Render ChatLog component */
+

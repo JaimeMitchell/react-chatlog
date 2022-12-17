@@ -10,7 +10,7 @@ const ChatLog = (props) => {
           id={entry.id}
           sender={entry.sender}
           body={entry.body}
-          time={entry.timeStamp}
+          timeStamp={entry.timeStamp}
           liked={entry.liked}
           toggleHeart={props.toggleHeart}
         />
