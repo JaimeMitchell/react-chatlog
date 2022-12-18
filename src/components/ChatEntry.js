@@ -5,16 +5,17 @@ import TimeStamp from './TimeStamp';
 
 const ChatEntry = (props) => {
   const heartButton = props.liked ? '❤️' : '🤍';
+  const LocalRemote =
+    props.id % 2 === 0 ? 'chat-entry local' : 'chat-entry remote';
+    // className={`tasks__item__toggle ${buttonClass}`}
+
   return (
-    <div className="chat-entry local" id={props.id}>
+    <div className={`${LocalRemote}`} id={props.id}>
       <h2 className="entry-name">{props.sender}</h2>
       <section className="entry-bubble">
         <p>{props.body}</p>
 
-        <TimeStamp
-          className=".chat-entry.remote .entry-time"
-          time={props.timeStamp}
-        />
+        <TimeStamp className="entry-time" time={props.timeStamp} />
 
         {/* need to import toggleheart function */}
         <button
