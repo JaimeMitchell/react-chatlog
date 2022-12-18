@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div id="App" className="widget">
       <header>
-        <h1>ChatLog {callingHeartTally}❤️s</h1>
+        <h1>ChatLog {callingHeartTally} ❤️s</h1>
       </header>
       <main>
         <ChatLog
