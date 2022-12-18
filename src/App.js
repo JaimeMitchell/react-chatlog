@@ -27,7 +27,7 @@ const App = () => {
   const callingHeartTally = heartTally(messages);
 
   return (
-    <div id="App heartWidget">
+    <div id="App" className="widget">
       <header>
         <h1>ChatLog {callingHeartTally}❤️s</h1>
       </header>

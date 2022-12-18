@@ -10,12 +10,15 @@ const ChatEntry = (props) => {
       <h2 className="entry-name">{props.sender}</h2>
       <section className="entry-bubble">
         <p>{props.body}</p>
-        <p className=".chat-entry.remote .entry-time">
-          <TimeStamp time={props.timeStamp} />
-        </p>
+
+        <TimeStamp
+          className=".chat-entry.remote .entry-time"
+          time={props.timeStamp}
+        />
+
         {/* need to import toggleheart function */}
         <button
-          className="button"
+          className="like"
           onClick={() => {
             props.toggleHeart(props.id);
           }}
@@ -37,6 +40,6 @@ ChatEntry.propTypes = {
       liked: PropTypes.bool.isRequired,
       toggleHeart: PropTypes.func.isRequired,
     })
-  )
+  ),
 };
 export default ChatEntry;
