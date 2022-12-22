@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/JaimeMitchell/react-chatlog/static/css/main.417127af.chunk.css",
-    "main.js": "/JaimeMitchell/react-chatlog/static/js/main.cf904901.chunk.js",
-    "main.js.map": "/JaimeMitchell/react-chatlog/static/js/main.cf904901.chunk.js.map",
-    "runtime-main.js": "/JaimeMitchell/react-chatlog/static/js/runtime-main.bcda64cc.js",
-    "runtime-main.js.map": "/JaimeMitchell/react-chatlog/static/js/runtime-main.bcda64cc.js.map",
-    "static/js/2.76589e66.chunk.js": "/JaimeMitchell/react-chatlog/static/js/2.76589e66.chunk.js",
-    "static/js/2.76589e66.chunk.js.map": "/JaimeMitchell/react-chatlog/static/js/2.76589e66.chunk.js.map",
-    "index.html": "/JaimeMitchell/react-chatlog/index.html",
-    "static/css/main.417127af.chunk.css.map": "/JaimeMitchell/react-chatlog/static/css/main.417127af.chunk.css.map",
-    "static/js/2.76589e66.chunk.js.LICENSE.txt": "/JaimeMitchell/react-chatlog/static/js/2.76589e66.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.417127af.chunk.css",
+    "main.js": "./static/js/main.11fa58fa.chunk.js",
+    "main.js.map": "./static/js/main.11fa58fa.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.1de26abe.js",
+    "runtime-main.js.map": "./static/js/runtime-main.1de26abe.js.map",
+    "static/js/2.76589e66.chunk.js": "./static/js/2.76589e66.chunk.js",
+    "static/js/2.76589e66.chunk.js.map": "./static/js/2.76589e66.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.417127af.chunk.css.map": "./static/css/main.417127af.chunk.css.map",
+    "static/js/2.76589e66.chunk.js.LICENSE.txt": "./static/js/2.76589e66.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bcda64cc.js",
+    "static/js/runtime-main.1de26abe.js",
     "static/js/2.76589e66.chunk.js",
     "static/css/main.417127af.chunk.css",
-    "static/js/main.cf904901.chunk.js"
+    "static/js/main.11fa58fa.chunk.js"
   ]
 }
