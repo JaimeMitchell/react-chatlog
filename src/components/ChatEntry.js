@@ -7,7 +7,7 @@ const ChatEntry = (props) => {
   const heartButton = props.liked ? '❤️' : '🤍';
   const LocalRemote =
     props.id % 2 === 0 ? 'chat-entry local' : 'chat-entry remote';
-    // className={`tasks__item__toggle ${buttonClass}`}
+ 
 
   return (
     <div className={`${LocalRemote}`} id={props.id}>
